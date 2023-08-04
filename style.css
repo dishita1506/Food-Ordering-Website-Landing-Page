@@ -1,0 +1,339 @@
+ /* FULL PAGE RESET */
+ * {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* NAV ITEMS*/
+#navbar {
+    position: relative;
+}
+
+#navbar div {
+    display: flex;
+    align-items: center;
+
+}
+#navbar ul li:hover{
+    background-color: black;
+    color: gray;
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+/* IMAGE */
+#logo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+#logo img:hover{
+  transform: scale(2);
+}
+#logo ul {
+    display: flex;
+}
+
+/* LIST */
+#navbar ul li {
+    display: flex;
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+/* HOME SECTION */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#home::before {
+    content: "";
+    background: url(https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg) no-repeat center center/cover;
+    opacity: 0.90;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1
+}
+
+#home h1 {
+    font-size: 50px;
+    font-family: "Sofia", sans-serif;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+#home p {
+    font-size: 15px;
+    font-family: "Trirong", serif;
+    font-weight: 500;
+    color: whitesmoke;
+
+}
+
+.btn {
+    height: 40px;
+    width: 100px;
+    border: 2px double white;
+    border-radius: 9px;
+    background-color: brown;
+    color: white;
+    margin: 28px;
+    padding: 6px 15px;
+}
+
+/* SERVICES SECTION */
+.services-container .box:hover{
+    transform: scale(1.25);
+}
+.services-container::before{
+    content: "";
+    position: absolute;
+    background: url(https://cdn.pixabay.com/photo/2015/07/28/22/11/wheat-865152__340.jpg) center center/cover;
+    z-index: -3;
+    width: 100%;
+    height: 182%;
+    opacity: 0.2;
+
+
+}
+.services div {
+
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+}
+
+#services .box {
+    border: 4px solid brown;
+    margin-top: 6px;
+    display: block;
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    background-color: rgb(236, 233, 229);
+    
+}
+
+#services .box img {
+    height: 169px;
+    width: 550px;
+    padding: 16px;
+    margin: 10px;
+}
+
+
+
+
+.primary_heading {
+    text-align: center;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 100px;
+}
+.secondary_heading{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+    font-size: 25px;
+    color: dimgray;
+}
+.dam{
+    padding: 20px;
+    margin: 10px;
+    color: darkslategrey;
+}
+
+/* CLIENT SECTION */
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-color:moccasin;
+    z-index: -1;
+    width: 100%;
+    height: 60%;
+    opacity: 0.2;
+
+
+}
+.client-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.client-item img{
+    height: 180px;
+    width: 180px;
+}
+#dom{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+/* CONTACT SECTION */
+#contact-section{
+    position:relative;
+}
+#contact-section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url(https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523__340.jpg)  no-repeat center center/cover;
+    opacity: 0.25;
+    padding-top: 20px;
+}
+/* FOOTER */
+.center{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* CONTACT BOX */
+#contact-box{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding-bottom: 34px;
+
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.btnnn{
+    height: 40px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 130px;
+    border-radius: 10px;
+    background-color: dimgray;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.btnnn:hover{
+    transform: scale(1.25);
+    background-color:black ;
+    color: aliceblue;
+}
+
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+     #home , .service-container ,#client-section,#contact-section {
+      width: 100%;
+      padding: 0;
+    }
+    #services .box ,#services .box img{
+        height:300px;
+        width:400px;
+    }
+
+    #home h1{
+        font-size: 30px;
+    }
+    #home p{
+        font-size:14px;
+        padding: 5px;
+    }
+    footer{
+        font-size: 14px;
+    }
+
+    #home .btn{
+        height: 30px;
+        width: 65px;
+        font-size: 8px;
+        
+    }
+    #services .box img {
+        height: 100px;
+        width: 350px;
+        padding: 16px;
+        margin: 10px;
+    }
+    .dam{
+        font-size: 12px;
+    }
+    .secondary_heading{
+        font-size: 20px;
+    }
+    .primary_heading{
+        font-size: 25px;
+    }
+  }
+  @media only screen and (max-width:300px) {
+    /* For mobile phones: */
+     #navbar,#home , .service-container ,#client-section,#contact-section{
+      width: 100%;
+      
+    }
+    #navbar ul li {
+        font-size: 5px;
+    }
+    
+    #services .box ,#services .box img{
+        height:80px;
+        width:150px
+    }
+    .box{
+        width: 100%;
+    }
+    #home h1{
+        font-size: 20px;
+    }
+    #home p{
+        font-size:10px;
+        padding: 5px;
+    }
+    footer{
+        font-size: 10px;
+    }
+    #home .btn{
+        height: 30px;
+        width: 65px;
+        font-size: 8px;
+        
+    }
+    .dam{
+        font-size: 10px;
+    }
+    .secondary_heading{
+        font-size: 15px;
+    }
+  }
